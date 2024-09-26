@@ -13,9 +13,11 @@ https://www.youtube.com/watch?v=hdI2bqOjy3c&t=2s
 
 8. OOP (prototypes & classes)
 
-9. DOM Selection
+9. DOM Selection(Document Object Model)
+
 10. DOM manipulation
 11. Events
+
 12. Basic from Validation
 
 -Full React Tutorial-

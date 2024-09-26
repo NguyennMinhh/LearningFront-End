@@ -1,18 +1,22 @@
-// Constructor function
-function Person(name, studying, birth) {
+// class
+class Person {
+    // constructor
+    constructor(name, studying, birth) {
         this.name = name;
         this.studying = studying;
         this.birth = new Date(birth);
-        this.getBirthYear = function() {
-            return this.birth.getFullYear();
-        }
-        this.getFullInfo = function() {
-            console.log(`Name: ${this.name} <br> Studying: ${this.studying} <br> Birth: ${this.birth} <br>`);
-        };
+    }
+
+    // prototype
+    getBirthYear() {
+        return this.birth.getFullYear();
+    };
+    getInfo() {
+        return `Name: ${this.name} - Studying: ${this.studying} - Birth: ${this.getBirthYear()}`;
+    };
+
 };
 
-// Instantiate Object
-const person1 = new Person("Minh", true, "8/23/2004");
-const person2 = new Person("Quang", false, "12/05/1997")
+const personA = new Person("Minh", true, "8/23/2004");
 
-console.log(person1);
+console.log(personA.getInfo());
